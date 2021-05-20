@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Estilos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Lucas Biagiotti - PWA</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-6 d-flex">
+                <span class="icono"></span>
+                <h1>Estado del tiempo</h1>
+            </div>
+            <div class="app col-sm-12 col-md-10 col-lg-7 col-xl-6">
+                <h2 id="ciudad"></h2>
+                <p id="clima"></p>
+                <div class="mt-2">
+                    <!-- <label for="palabra" class="form-label">Ingresar ciudad</label> -->
+                    <input type="text" id="palabra" class="d-block form-control" placeholder="Ingresar ciudad">
+                </div>
+                <button id="btn" class="btn btn-warning my-2">Buscar</button>
+
+                <div id="respuesta"
+                    class="mt-2 d-flex p-2 justify-content-around flex-column flex-sm-row align-items-start align-items-sm-center">
+                </div>
+                <div id="maps" class="mt-2 py-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archivo para agregar sus Api-Keys -->
+    <script type="module" src="js//api-keys.js"></script>
+    <!-- Api -->
+    <script type="module" src="js/api-weather.js"></script>
+    <!-- Iconos usados para el Clima -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+</body>
+
+</html>

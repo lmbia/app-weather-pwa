@@ -1,0 +1,107 @@
+/* Link a Paleta de Colores
+https://coolors.co/ffadad-ffd6a5-fdffb6-caffbf-9bf6ff-a0c4ff-bdb2ff-ffc6ff-fffffc
+*/
+
+:root {
+    --priRed: #FFADAD;
+    --secAma: #FDFFB6;
+
+    --soleado: #FFD6A5;
+    --lluvioso: #A0C4FF;
+    --nublado: #d8d8d8;
+
+    --text: #495057;
+    --gris: #cacaca;
+}
+
+.btn-warning {
+    background-color: var(--priRed);
+    color: white;
+    border: none;
+}
+
+.btn-warning:focus {
+    color: white;
+}
+
+.soleado {
+    background-color: var(--soleado);
+    transition: 1s ease;
+}
+
+.lluvioso {
+    background-color: var(--lluvioso);
+    transition: 1s ease;
+}
+
+.nublado {
+    background-color: var(--nublado);
+    transition: 1s ease;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-sun {
+    color: var(--secAma);
+    font-size: 2em;
+}
+
+.fa-cloud {
+    color: var(--gris);
+    font-size: 2em;
+}
+
+.fa-cloud-showers-heavy {
+    color: var(--nublado);
+    font-size: 2em;
+}
+
+.app{
+    background-color:rgb(250, 250, 250);
+    margin: 1em;
+    padding: 1em;
+    border-radius: .6em;
+}
+
+#maps{
+    border-radius: .6em;
+    overflow: hidden;
+}
+
+iframe {
+    display: block;
+}
+
+.container {
+    padding: 1.2em;
+}
+
+#respuesta {
+    background-color: white;
+    border-radius: .6em;
+}
+
+#respuesta span {
+    font-size: 2em;
+    text-align: center;
+    padding: .2em;
+}
+
+#respuesta ul {
+    font-size: 1em;
+    color: var(--text);
+    padding: .2em;
+}
+
+.icono {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/clima-weather-icon.png);
+    background-position: center;
+    background-size: cover;
+}
